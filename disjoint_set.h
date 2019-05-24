@@ -46,7 +46,7 @@ public:
     }
 
     void join(int vert1, int vert2) {
-        root[vert1]=vert2;
+        root[find(vert1)]=vert2;
     }
 };
 
