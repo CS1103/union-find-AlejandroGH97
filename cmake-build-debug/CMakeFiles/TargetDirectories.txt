@@ -1,0 +1,3 @@
+/home/alejandro/Documents/UTEC/Ciclo 3/POO II/union-find-AlejandroGH97/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alejandro/Documents/UTEC/Ciclo 3/POO II/union-find-AlejandroGH97/cmake-build-debug/CMakeFiles/union_find_AlejandroGH97.dir
+/home/alejandro/Documents/UTEC/Ciclo 3/POO II/union-find-AlejandroGH97/cmake-build-debug/CMakeFiles/edit_cache.dir

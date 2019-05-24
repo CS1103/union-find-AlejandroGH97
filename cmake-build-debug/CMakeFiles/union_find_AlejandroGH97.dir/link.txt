@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/union_find_AlejandroGH97.dir/main.cpp.o CMakeFiles/union_find_AlejandroGH97.dir/disjoint_set.cpp.o CMakeFiles/union_find_AlejandroGH97.dir/disjoint_setTest.cpp.o  -o union_find_AlejandroGH97 
