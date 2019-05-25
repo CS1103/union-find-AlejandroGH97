@@ -456,6 +456,10 @@ algorithm
 cassert
 -
 
+/home/alejandro/Documents/UTEC/Ciclo 3/POO II/union-find-AlejandroGH97/disjoint_set.cpp
+disjoint_set.h
+/home/alejandro/Documents/UTEC/Ciclo 3/POO II/union-find-AlejandroGH97/disjoint_set.h
+
 /home/alejandro/Documents/UTEC/Ciclo 3/POO II/union-find-AlejandroGH97/disjoint_set.h
 array
 -
@@ -470,5 +474,7 @@ vector
 array
 -
 deque
+-
+iostream
 -
 

@@ -6,8 +6,12 @@
 #include <vector>
 #include <array>
 #include <deque>
+#include <iostream>
 
 TEST_CASE("Test arena:") {
+
+    //------VECTOR---------
+
 
     disjoint_set<5,std::vector<int>> test1;
 
@@ -27,6 +31,19 @@ TEST_CASE("Test arena:") {
     REQUIRE(test1.same(3,5)==false);
     REQUIRE(test1.same(2,7)==true);
 
+    test1.join(10,13);
+    test1.join(17,10);
+    test1.join(20,17);
+    test1.join(16,11);
+    test1.join(12,11);
+    test1.join(19,16);
+    test1.join(15,13);
+    test1.join(13,11);
+
+    REQUIRE(test1.getRank(11)==2);
+
+    //------DEQUE---------
+
     disjoint_set<5,std::deque<int>> test2;
 
     test2.join(1,0);
@@ -44,6 +61,20 @@ TEST_CASE("Test arena:") {
     REQUIRE(test2.same(8,5)==true);
     REQUIRE(test2.same(3,5)==false);
     REQUIRE(test2.same(2,7)==true);
+
+    test2.join(10,13);
+    test2.join(17,10);
+    test2.join(20,17);
+    test2.join(16,11);
+    test2.join(12,11);
+    test2.join(19,16);
+    test2.join(15,13);
+    test2.join(13,11);
+
+    REQUIRE(test2.getRank(11)==2);
+
+    //------ARRAY---------
+
 
     disjoint_set<5,std::array<int,5>> test3;
 
@@ -63,5 +94,15 @@ TEST_CASE("Test arena:") {
     REQUIRE(test3.same(3,5)==false);
     REQUIRE(test3.same(2,7)==true);
 
+    test3.join(10,13);
+    test3.join(17,10);
+    test3.join(20,17);
+    test3.join(16,11);
+    test3.join(12,11);
+    test3.join(19,16);
+    test3.join(15,13);
+    test3.join(13,11);
+
+    REQUIRE(test3.getRank(11)==2);
 
 }
